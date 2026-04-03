@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sophia Resciniti, LCSW – Compassionate virtual therapy for trauma, anxiety, grief, and life transitions. Serving Binghamton, NY and all of New York State.">
     <title>Sophia Resciniti, LCSW | Virtual Therapy in New York</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap');
         
-        :root {
-            --primary-blue: #0d5eaf;
-        }
+        :root { --primary-blue: #0d5eaf; }
         
-        .hero-bg {
-            background: linear-gradient(135deg, #0d5eaf 0%, #1e88e5 100%);
-        }
+        .hero-bg { background: linear-gradient(135deg, #0d5eaf 0%, #1e88e5 100%); }
         
-        .nav-link {
-            position: relative;
-        }
+        .nav-link { position: relative; }
         .nav-link:after {
             content: '';
             position: absolute;
@@ -32,61 +25,28 @@
         }
         .nav-link:hover:after { width: 100%; }
         
-        .section-header { 
-            font-family: 'Playfair Display', sans-serif; 
-        }
+        .section-header { font-family: 'Playfair Display', sans-serif; }
 
-        /* Strong glowing pulsing button */
         .glowing-status {
             animation: glow-pulse 2.5s ease-in-out infinite;
-            box-shadow: 0 0 15px rgba(16, 185, 129, 0.7),
-                        0 0 35px rgba(16, 185, 129, 0.5);
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.7), 0 0 35px rgba(16, 185, 129, 0.5);
         }
 
         @keyframes glow-pulse {
             0%, 100% { 
-                box-shadow: 0 0 15px rgba(16, 185, 129, 0.7),
-                            0 0 35px rgba(16, 185, 129, 0.5);
+                box-shadow: 0 0 15px rgba(16, 185, 129, 0.7), 0 0 35px rgba(16, 185, 129, 0.5);
                 transform: scale(1);
             }
             50% { 
-                box-shadow: 0 0 28px rgba(16, 185, 129, 0.95),
-                            0 0 50px rgba(16, 185, 129, 0.6);
+                box-shadow: 0 0 28px rgba(16, 185, 129, 0.95), 0 0 50px rgba(16, 185, 129, 0.6);
                 transform: scale(1.04);
             }
         }
 
-        .ping-dot {
-            animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
-        }
+        .ping-dot { animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite; }
 
         @keyframes ping {
-            75%, 100% {
-                transform: scale(2.5);
-                opacity: 0;
-            }
-        }
-
-        details {
-            background: white;
-            border: 1px solid #e5e7eb;
-            border-radius: 1.5rem;
-            padding: 1.25rem;
-            margin-bottom: 1rem;
-        }
-        
-        summary {
-            font-weight: 600;
-            cursor: pointer;
-            list-style: none;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        summary::-webkit-details-marker { display: none; }
-
-        @media (max-width: 640px) {
-            .hero-text { font-size: 2.15rem; line-height: 1.15; }
+            75%, 100% { transform: scale(2.5); opacity: 0; }
         }
     </style>
 </head>
@@ -126,7 +86,6 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-5 py-6">
             <div class="flex flex-col gap-y-5 text-base font-medium">
                 <a href="#about" onclick="toggleMobileMenu()" class="py-2">About Me</a>
@@ -149,7 +108,6 @@
         <div class="max-w-7xl mx-auto px-5 sm:px-6">
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div class="space-y-8">
-                    <!-- Glowing Pulsing Button -->
                     <div class="inline-flex items-center gap-x-3 bg-white/20 backdrop-blur-md px-6 py-3 rounded-3xl text-sm font-medium glowing-status">
                         <span class="relative flex h-3 w-3">
                             <span class="ping-dot absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
@@ -158,7 +116,7 @@
                         Now Accepting New Clients
                     </div>
 
-                    <h1 class="hero-text text-4xl sm:text-5xl md:text-6xl font-semibold leading-none tracking-tighter">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold leading-none tracking-tighter">
                         Compassionate therapy<br>that meets you where you are
                     </h1>
                     
@@ -178,27 +136,9 @@
                     </div>
 
                     <div class="flex flex-wrap gap-6 pt-4 text-sm">
-                        <div class="flex items-center gap-x-3">
-                            <i class="fa-solid fa-video text-2xl"></i>
-                            <div>
-                                <div class="font-medium">100% Virtual</div>
-                                <div class="text-blue-100 text-xs">From the comfort of your home</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-x-3">
-                            <i class="fa-solid fa-language text-2xl"></i>
-                            <div>
-                                <div class="font-medium">English &amp; Greek</div>
-                                <div class="text-blue-100 text-xs">Bilingual services</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-x-3">
-                            <i class="fa-solid fa-star text-2xl"></i>
-                            <div>
-                                <div class="font-medium">5.0 ★ Client Reviews</div>
-                                <div class="text-blue-100 text-xs">Real feedback from clients</div>
-                            </div>
-                        </div>
+                        <div class="flex items-center gap-x-3"><i class="fa-solid fa-video text-2xl"></i><div><div class="font-medium">100% Virtual</div><div class="text-blue-100 text-xs">From the comfort of your home</div></div></div>
+                        <div class="flex items-center gap-x-3"><i class="fa-solid fa-language text-2xl"></i><div><div class="font-medium">English &amp; Greek</div><div class="text-blue-100 text-xs">Bilingual services</div></div></div>
+                        <div class="flex items-center gap-x-3"><i class="fa-solid fa-star text-2xl"></i><div><div class="font-medium">5.0 ★ Client Reviews</div><div class="text-blue-100 text-xs">Real feedback from clients</div></div></div>
                     </div>
 
                     <p class="text-xs text-blue-100">
@@ -206,12 +146,12 @@
                     </p>
                 </div>
 
-                <!-- Your Photo -->
-                <div class="hidden md:flex justify-end">
-                    <div class="relative w-80">
+                <!-- Photo - Visible on both mobile and desktop -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="relative w-64 sm:w-72 md:w-80">
                         <img src="320x400.png" 
                              alt="Sophia Resciniti, LCSW"
-                             class="w-full rounded-3xl shadow-2xl object-cover border border-white/30">
+                             class="w-full rounded-3xl shadow-2xl object-cover">
                         <div class="absolute -bottom-6 -left-6 bg-white text-slate-900 px-6 py-4 rounded-3xl shadow-xl">
                             <div class="text-4xl font-semibold">20</div>
                             <div class="text-sm">Years Experience</div>
@@ -229,9 +169,9 @@
                 <div class="md:col-span-7">
                     <h2 class="section-header text-4xl sm:text-5xl font-medium text-slate-900 mb-8">Hi, I'm Sophia.</h2>
                     <div class="prose prose-lg text-gray-700 space-y-6">
-                        <p>You may be feeling overwhelmed by anxiety, trauma, grief, or a major life transition. Past experiences such as loss, relationship harm, or exposure to violence may still be affecting you. You might also be navigating cultural or immigration-related stress, caregiving, or end-of-life concerns.</p>
-                        <p>I bring 20 years of experience supporting adults impacted by trauma, anxiety, depression, grief, and life transitions. My background includes working with survivors of domestic abuse, individuals facing significant loss, and crisis response. I have also taught Masters-level clinical courses at Binghamton University.</p>
-                        <p>I identify as a woman of other racial/ethnic background and speak English and Greek. My style is warm, empowering, open-minded, and non-judgmental.</p>
+                        <p>You may be feeling overwhelmed by anxiety, trauma, grief, or a major life transition. Past experiences such as loss, relationship harm, or exposure to violence may still be affecting you.</p>
+                        <p>I bring 20 years of experience supporting adults impacted by trauma, anxiety, depression, grief, and life transitions. My background includes working with survivors of domestic abuse, individuals facing significant loss, and crisis response.</p>
+                        <p>I speak English and Greek. My style is warm, empowering, open-minded, and non-judgmental.</p>
                     </div>
                 </div>
                 <div class="md:col-span-5 bg-slate-100 rounded-3xl p-8 sm:p-10">
@@ -247,7 +187,7 @@
                             <i class="fa-solid fa-briefcase text-3xl text-[#0d5eaf] mt-1"></i>
                             <div>
                                 <div class="font-semibold">20 years clinical experience</div>
-                                <div class="text-sm text-gray-600">Trauma-informed care • Crisis response</div>
+                                <div class="text-sm text-gray-600">Trauma-informed care</div>
                             </div>
                         </div>
                         <div class="flex gap-5">
@@ -285,7 +225,7 @@
                 <div class="bg-white rounded-3xl p-8 shadow-sm">
                     <div class="text-4xl mb-6">🌍</div>
                     <h3 class="text-2xl font-semibold mb-3">Culturally Sensitive</h3>
-                    <p class="text-gray-600">I honor your background, identity, and lived experiences — including immigration and cultural dimensions.</p>
+                    <p class="text-gray-600">I honor your background, identity, and lived experiences.</p>
                 </div>
             </div>
         </div>
@@ -317,8 +257,8 @@
                         <div><strong>Life Transitions</strong><br><span class="text-gray-600 text-sm">Immigration, career, relationship changes</span></div>
                     </div>
                     <div class="flex gap-4">
-                        <i class="fa-solid fa-house-fire text-[#0d5eaf] text-2xl mt-1"></i>
-                        <div><strong>Domestic Abuse &amp; Relationship Issues</strong><br><span class="text-gray-600 text-sm">Couples counseling and family conflict</span></div>
+                        <i class="fa-solid fa-heart text-[#0d5eaf] text-2xl mt-1"></i>
+                        <div><strong>Relationship Issues</strong><br><span class="text-gray-600 text-sm">Couples counseling, communication, and family conflict</span></div>
                     </div>
                     <div class="flex gap-4">
                         <i class="fa-solid fa-hand-holding-heart text-[#0d5eaf] text-2xl mt-1"></i>
@@ -329,7 +269,7 @@
         </div>
     </section>
 
-    <!-- Contact Section (first before fees) -->
+    <!-- Contact -->
     <section id="contact" class="py-20 bg-slate-100">
         <div class="max-w-7xl mx-auto px-5 sm:px-6">
             <div class="grid md:grid-cols-2 gap-12">
@@ -346,25 +286,17 @@
                                 <div class="text-[#0d5eaf]">Calls only — no texts</div>
                             </div>
                         </a>
-                        <div class="flex items-center gap-6">
-                            <div class="w-14 h-14 bg-white rounded-3xl flex items-center justify-center text-3xl shadow">🌐</div>
-                            <div>
-                                <div class="font-semibold text-xl">Virtual sessions only</div>
-                                <div class="text-[#0d5eaf]">Licensed in New York • Statewide</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <form action="https://formspree.io/f/your-email-here" method="POST" class="space-y-6 bg-white rounded-3xl p-8 shadow-sm">
+                <!-- WORKING FORM - Your Formspree link -->
+                <form action="https://formspree.io/f/mdapwddn" method="POST" class="space-y-6 bg-white rounded-3xl p-8 shadow-sm">
                     <div class="grid grid-cols-2 gap-4">
                         <input type="text" name="firstname" placeholder="First name" required class="w-full px-5 py-4 rounded-3xl border focus:border-[#0d5eaf] outline-none">
                         <input type="text" name="lastname" placeholder="Last name" required class="w-full px-5 py-4 rounded-3xl border focus:border-[#0d5eaf] outline-none">
                     </div>
-                    <input type="email" name="email" placeholder="Email address" required class="w-full px-5 py-4 rounded-3xl border focus:border-[#0d5eaf] outline-none">
-                    <input type="tel" name="phone" placeholder="Phone (optional)" class="w-full px-5 py-4 rounded-3xl border focus:border-[#0d5eaf] outline-none">
-                    <textarea name="message" rows="5" placeholder="Tell me a little about what brings you in..." 
+                    <input type="email" name="email" placeholder="Your email address" required class="w-full px-5 py-4 rounded-3xl border focus:border-[#0d5eaf] outline-none">
+                    <textarea name="message" rows="5" placeholder="What brings you in? Any questions?" 
                               class="w-full px-5 py-4 rounded-3xl border focus:border-[#0d5eaf] outline-none resize-y"></textarea>
                     
                     <button type="submit" 
@@ -397,16 +329,13 @@
 
                 <div>
                     <h2 class="section-header text-4xl sm:text-5xl font-medium text-slate-900">How to Book</h2>
-                    <p class="mt-6 text-gray-700">After our free 15-minute consultation, you can book ongoing sessions through my Headway profile where insurance is also handled.</p>
+                    <p class="mt-6 text-gray-700">After our free 15-minute consultation, you can book ongoing sessions through my Headway profile.</p>
                     
-                    <a href="https://care.headway.co/providers/sophia-resciniti" 
-                       target="_blank"
+                    <a href="https://care.headway.co/providers/sophia-resciniti" target="_blank"
                        class="mt-10 inline-flex items-center justify-center gap-3 w-full sm:w-auto px-10 py-5 bg-[#0d5eaf] hover:bg-[#0a4a8c] text-white font-semibold rounded-3xl text-lg">
                         Book Your Session on Headway
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
-                    
-                    <p class="mt-6 text-sm text-gray-600">All appointments and payments are managed securely through Headway.</p>
                 </div>
             </div>
         </div>
@@ -421,38 +350,14 @@
             </div>
             
             <div class="space-y-4">
-                <details>
-                    <summary>Do you offer telehealth visits?</summary>
-                    <p class="mt-4 text-gray-600">Yes. All sessions are provided virtually through secure video, phone, or messaging based on what works best for you.</p>
-                </details>
-                <details>
-                    <summary>What languages do you speak?</summary>
-                    <p class="mt-4 text-gray-600">I speak English and Greek.</p>
-                </details>
-                <details>
-                    <summary>How many years of experience do you have?</summary>
-                    <p class="mt-4 text-gray-600">I have 20 years of clinical experience in mental health and social work.</p>
-                </details>
-                <details>
-                    <summary>Where are you licensed to practice?</summary>
-                    <p class="mt-4 text-gray-600">I am licensed to practice in New York State.</p>
-                </details>
-                <details>
-                    <summary>Do you accept FSA/HSA?</summary>
-                    <p class="mt-4 text-gray-600">Yes, you can pay for sessions using your pre-tax FSA or HSA funds.</p>
-                </details>
-                <details>
-                    <summary>Do you accept clients outside of the United States?</summary>
-                    <p class="mt-4 text-gray-600">No, services are limited to clients located in New York State.</p>
-                </details>
-                <details>
-                    <summary>What treatment approaches do you offer?</summary>
-                    <p class="mt-4 text-gray-600">I draw from Acceptance and Commitment Therapy (ACT), Attachment-Based Therapy, Client-Centered Therapy, Cognitive Behavioral Therapy (CBT), EMDR, Narrative Therapy, Solution-Focused Therapy, and Trauma-Focused approaches.</p>
-                </details>
-                <details>
-                    <summary>How do I get started?</summary>
-                    <p class="mt-4 text-gray-600">The best first step is to request a free 15-minute consultation. We’ll talk briefly so you can see if we’re a good fit. If we decide to move forward, you can then book ongoing sessions through my Headway profile.</p>
-                </details>
+                <details><summary>Do you offer telehealth visits?</summary><p class="mt-4 text-gray-600">Yes. All sessions are provided virtually through secure video, phone, or messaging based on what works best for you.</p></details>
+                <details><summary>What languages do you speak?</summary><p class="mt-4 text-gray-600">I speak English and Greek.</p></details>
+                <details><summary>How many years of experience do you have?</summary><p class="mt-4 text-gray-600">I have 20 years of clinical experience in mental health and social work.</p></details>
+                <details><summary>Where are you licensed to practice?</summary><p class="mt-4 text-gray-600">I am licensed to practice in New York State.</p></details>
+                <details><summary>Do you accept FSA/HSA?</summary><p class="mt-4 text-gray-600">Yes, you can pay for sessions using your pre-tax FSA or HSA funds.</p></details>
+                <details><summary>Do you accept clients outside of the United States?</summary><p class="mt-4 text-gray-600">No, services are limited to clients located in New York State.</p></details>
+                <details><summary>What treatment approaches do you offer?</summary><p class="mt-4 text-gray-600">I draw from EMDR, CBT, Narrative Therapy, Attachment-Based, Client-Centered, and other trauma-informed approaches.</p></details>
+                <details><summary>How do I get started?</summary><p class="mt-4 text-gray-600">The best first step is to request a free 15-minute consultation. We'll talk briefly so you can see if we're a good fit.</p></details>
             </div>
         </div>
     </section>
